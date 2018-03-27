@@ -99,3 +99,15 @@ forever.
 2: 99103 // The value that address 0 will output.
 ```
 
+### Included Programs
+
+For demonstration, there are a few sample programs located in the
+examples/ directory. A brief description of each is below.
+
+*  simple_quine.hypo: This is the simplest possible quine program that
+   can be implemented in hypo machine language.
+*  quine.hypo: A much more interesting quine program.
+*  fibonacci.hypo: A fibonacci sequence generator that prompts for the
+   number of elements to generate and then outputs that many elements.
+*  max.hypo: Ask for two numbers and print the larger one. (Negatives
+   not handled cleanly.)

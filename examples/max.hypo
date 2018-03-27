@@ -1,0 +1,11 @@
+0: 0 // Print the larger of two user supplied values: max(a, b)
+0: 0 // Note that negatives aren't handled cleanly
+0: 30030 // Read value a to address 30
+1: 30035 // Read value b to address 35
+2: 10030 // Load value a into AC
+3: 21035 // Subtract value b from value a
+4: 06007 // If AC <= 0, jump to printing value b, it's larger or equal to value a
+5: 31030 // Print value a
+6: 00000 // Halt
+7: 31035 // Print value b
+8: 00000 // Halt

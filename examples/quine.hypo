@@ -1,0 +1,12 @@
+0: 0 // Comment Line: This program is a quine. It will print itself.
+0: 31000 // Print the memory in the referenced address
+1: 05004 // Skip over data
+2: 31011 // Data value 11 (number of instructions, incl HLT), but prefixed with "PUT" opcode; for use in subtraction
+3: 00001 // Data value 1 (an increment/decrement)
+4: 10000 // Load the first memory address to AC
+5: 20003 // Add the value of address 3 to AC
+6: 11000 // Store AC to address 0; The print instruction is now altered to print the next element
+7: 10002 // Load our number of instructions data counter
+8: 21000 // Subtract address 0 from AC
+9: 02000 // Goto instruction at address 0 if AC is still positive
+10: 00000 // Halt

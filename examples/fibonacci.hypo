@@ -1,0 +1,22 @@
+00: 00000 // The next section sets up some data values
+46: 00001 // Data: Decrement loop counter by this value each iteration
+47: 00010 // Data: How many elements in the series to calculate
+48: 00000 // Data: Input to sequence calculation
+49: 00001 // Data: Input to sequence calculation
+00: 00000 // This section is the loop counter handling
+00: 30047 // Read in the number of elements to print
+01: 10047 // Load the loop counter
+02: 01030 // Jump to HALT, we're done when this is zero
+03: 21046 // Decrement the loop counter
+04: 11047 // Store decremented loop counter
+05: 31048 // Output the first element in the sequence
+06: 00000 // Now, ouput the next element in the sequence, calculate subsequent value and shuffle memory around
+06: 10048 // Load first element to AC
+07: 20049 // Add second element
+08: 11045 // Store calculated value
+09: 10049 // Load  second element
+10: 11048 // Store as "next" first element
+11: 10045 // Load calculated element
+12: 11049 // Store as "next" second element
+13: 05001 // Jump back to the start to begin next iteration.
+30: 00000  // Halt

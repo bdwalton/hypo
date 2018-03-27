@@ -1,0 +1,3 @@
+0: 0 // This program is a quine. It prints itself.
+0: 31000 // Print the memory in the referenced address (0, the only instruction)
+1: 00000 // Halt
