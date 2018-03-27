@@ -1,0 +1,14 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library", "go_test")
+
+go_test(
+    name = "hypo_test",
+		srcs = ["hypo.go", "machine.go", "machine_test.go"],
+		size = "small",
+)
+
+go_binary(
+    name = "hypo",
+    srcs = ["hypo.go", "machine.go"],
+    visibility = ["//visibility:public"],
+)
+
